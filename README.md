@@ -22,7 +22,7 @@ Or download the repository [here](https://github.com/dj0nny/vue-express-typeorm/
 Open a terminal and type:
 ```bash
 cd server
-npm run install 
+npm install 
 # OR
 yarn install
 ```
@@ -40,7 +40,7 @@ for running the Express server.
 Open a terminal and type:
 ```bash
 cd client
-npm run install 
+npm install 
 # OR
 yarn install
 ```

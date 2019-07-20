@@ -27,7 +27,7 @@ npm run install
 yarn install
 ```
 
-for installing all the dependencies. At the end type, in the same folder:
+for installing all the dependencies. At the end type:
 ```bash
 npm run dev
 # OR

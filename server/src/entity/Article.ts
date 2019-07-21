@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from 'typeorm';
 import { Writer } from './Writer';
 
 @Entity()
@@ -13,9 +13,9 @@ export class Article {
   summary: string;
 
   @Column({ type: "longtext" })
-  body: string;
+  body: string; 
 
-  @OneToMany(type => Writer, writer => writer.id)
-  writers: Writer[];
-
+  @ManyToOne(type => Writer, writer => writer.id)
+  writer: Writer;
+  
 }

@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
+import { Article } from './Article';
 
 @Entity()
 export class Writer {
@@ -11,5 +12,7 @@ export class Writer {
   @Column()
   secondName: string;
 
+  @OneToMany(type => Article, article => article.id)
+  articles: Article[];
 }
 

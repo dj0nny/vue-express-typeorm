@@ -54,17 +54,19 @@ Once finished, you'll need create a `ormconfig.json` and put in your own databas
 ```json
 {
   "type": "mysql", 
-  "host": "", // hostname
+  "host": "", 
   "port": 3306,
-  "username": "", // DB username
-  "password": "", // DB password
-  "database": "", // DB name
+  "username": "",
+  "password": "", 
+  "database": "", 
   "entities": ["src/entity/*.ts"],
   "logging": true,
   "synchronize": true
 }
 ```
 **Warning**: the field `type` **must** be `mysql` because, in this example, it'll be used a mysql database.
+
+A complete guide about the configuration can be found [here](https://typeorm.io/#/using-ormconfig).
 
 Now you can run the Express server typing into the terminal:
 ```bash

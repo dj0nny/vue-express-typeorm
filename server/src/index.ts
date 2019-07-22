@@ -2,6 +2,7 @@ import * as express from "express";
 import { Request, Response } from "express";
 import { createConnection } from 'typeorm';
 import * as bodyParser from "body-parser";
+import * as cors from "cors";
 
 import { Article } from './entity/Article';
 import { Writer } from './entity/Writer';
@@ -11,6 +12,7 @@ createConnection().then(connection => {
   const writersRepository = connection.getRepository(Writer);
 
   const app = express();
+  app.use(cors());
   app.use(bodyParser.json());  
 
   app.get('/articles', async function(req: Request, res: Response){

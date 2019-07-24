@@ -3,7 +3,7 @@
     <b-container>
       <b-row>
         <b-col md="4">
-          Vue Express TypeORM
+          <router-link id="app-name" to="/">Vue Express TypeORM</router-link>
         </b-col>
         <b-col md="8">
           <ul id="menu">
@@ -41,6 +41,10 @@ export default class Header extends Vue {
   background: #4f6d7a;
   color: #fff;
   padding: 20px;
+
+  a#app-name {
+    color: #fff;
+  }
 
   ul#menu {
     padding: 0;

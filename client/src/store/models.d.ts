@@ -2,7 +2,7 @@ export interface articlesResponse {
   id: number;
   title: string;
   summary: string;
-  body: string
+  body: string;
 }
 
 export interface writersResponse {
